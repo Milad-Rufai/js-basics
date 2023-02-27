@@ -108,4 +108,8 @@ const presidentialCandidates = {
   PDP: "Atiku Abubakar",
 };
 
-console.log(Object.entries(presidentialCandidates));
+
+for (let [pp, candidate] of Object.entries(presidentialCandidates)){
+  console.log(`${candidate} is the presidential candidate of ${pp}`)
+
+}
