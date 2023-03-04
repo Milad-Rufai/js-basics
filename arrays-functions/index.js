@@ -1,4 +1,4 @@
-// Question 1: What are the differences between mutating array methods and non-mutation array methods in JavaScript. List 5 array methods that fall under each of them.
+//Question 1: What are the differences between mutating array methods and non-mutation array methods in JavaScript. List 5 array methods that fall under each of them.
 
     // Mutating array methods in JavaScript are array methods that modify the original array. These methods change the length of the array, add or remove elements, or modify existing elements of the array. 
     /** Examples mutating array methods in JavaScript are:
@@ -19,7 +19,7 @@
      */
 
 
-// Question 2: Here is an array of languages: [‘C#’, ‘JavaScript’, ‘Ruby’, ‘PHP’, ‘Python’]. Perform this operation on them 
+//Question 2: Here is an array of languages: [‘C#’, ‘JavaScript’, ‘Ruby’, ‘PHP’, ‘Python’]. Perform this operation on them 
 // Add ‘Kotlin’ to the end of the array
 // Add ‘Java’ after ‘Ruby’
 // Remove the first item in the array
@@ -47,7 +47,7 @@ languages.splice(languages.indexOf('PHP'), 1, 'Go', 'Rust')
 
 
 
-// What will be the value of fruit after calling the function changeFruit?
+//Question 3: What will be the value of fruit after calling the function changeFruit?
 let fruit = ['apple', 'mango', 'banana'];
 		function changeFruit( fruit ) {
     			fruit[2] = "orange";
@@ -59,7 +59,7 @@ console.log(changeFruit(fruit))
 
 
 
-// Write a function that accepts an array of numbers as an argument. Return the maximum value in the array.
+//Question 4: Write a function that accepts an array of numbers as an argument. Return the maximum value in the array.
 // e.g., max([4, 5, 10, -2]) // maximum value is 10
 
 function maxNum(numbers) {
@@ -74,7 +74,18 @@ function maxNum(numbers) {
 
 console.log(maxNum([3, 9, 22, 88, 76, 45, 99, 24, 101, 455, 6, 3, 2, 2]));
 
-// Write a function called valTimesIndex which accepts an array of numbers and returns a new array with each value multiplied by the index it is at in the array:
+
+//Question 5: Write a function called valTimesIndex which accepts an array of numbers and returns a new array with each value multiplied by the index it is at in the array:
 // e.g.,
 //  valTimesIndex([1,2,3]) // [0,2,6]
 // 		valTimesIndex([5,10,15]) // [0,10,30]
+
+function valTimesIndex(numbers) {
+    const result = [];
+    for (let i = 0; i < numbers.length; i++) {
+      result.push(numbers[i] * i);
+    }
+    return result;
+  }
+
+ console.log(valTimesIndex([1,2,3])) 
